@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans Gothic", sans-serif;
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(246,248,251,255);
+}
+
+.app {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: white;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.film-info {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 1.9rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+}
+
+.genre {
+    color: rgb(69, 135, 248)
+}
+
+.rating {
+    text-align: right;
+    font-weight: 900;
+}
+
+.color {
+    color: rgb(69, 135, 248);
+    font-size: 1.2rem;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.poster-price {
+    margin-right: 30px;
+    width: 230px;
+}
+
+.poster {
+    margin-bottom: 20px;
+}
+
+.image {
+    width: 230px;
+}
+
+.price-container {
+    width: 346px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.buy {
+    padding: 7px 25px 7px 25px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.desc-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+.about {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.desc-text {
+    max-width: 500px;
+    line-height: 1.5rem;
+}
+
+.staff-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+li {
+    color: rgb(95, 122, 255);
+    line-height: 1.4rem;
+}
+
+.more {
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.director-container {
+    margin-bottom: 20px;
+}
+
+.staff-job {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.watch-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.watch-trailer {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 3px solid black;
+    border-radius: 25px;
+    padding: 7px 15px 7px 15px;
+    position: relative;
+}
+
+.bx {
+    position: absolute;
+    right: -3px;
+    padding: 3px;
+    font-size: 1.5rem;
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    border-radius: 1000px;
+}
+
+.watch-btn {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 7px 25px 7px 25px;
+    display: flex;
+}
+
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media (max-width: 725px) {
+    .film-info {
+        flex-direction: column;
+    }
+
+    .main-info {
+        flex-direction: column;
+    }
+
+    .poster-price {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .title-genre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer {
+        width: 500px;
+    }
+}
+
+@media (max-width: 530px) {
+    .main-info {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .desc-text {
+        width: 300px;
+        font-size: 1rem;
+    }
+    
+    .price-container {
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 15px;
+    }
+
+    .poster-price {
+        margin: 0;
+    }
+
+    .price {
+        font-size: 1.2rem;
+    }
+
+    .staff-job {
+        font-size: 1rem;
+    }
+
+    li {
+        font-size: 0.75rem;
+    }
+    
+    .footer {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .watch-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .watch-trailer {
+        width: 160px;
+        font-size: 0.8rem;
+    }
+}
